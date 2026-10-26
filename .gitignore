@@ -2,6 +2,23 @@
 **/build/
 !**/src/**/build/
 
+# MacOS
+.DS_Store
+
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+.settings/
+
+# VS Code
+.vscode/
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -14,8 +31,26 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-# Eclipse Gradle plugin generated files
-# Eclipse Core
-.project
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# Maven and Java
+target/
+*.class
+*.log
+
+# Vaadin Build and dependency directories
+node_modules/
+
+# Vaadin frontend generated files
+frontend/generated/
+src/main/frontend/generated/
+vite.generated.ts
+webpack.generated.js
+pnpmfile.js
+.vaadin-node-tasks.lock
+
+# Vaadin Production bundles (if not meant to be shared via git)
+dev-bundle/
+src/main/dev-bundle/
+
+# Vaadin Testbench / Local Integration Testing
+drivers/
+error-screenshots/
