@@ -19,15 +19,15 @@ Resilia is a Vaadin Flow application built with Spring Boot, modeling Micro Focu
 
 ## Requirements
 
-- Java 25 or newer
-- Gradle 8.14 or newer
+- Java 24 or newer
+- Maven 3.9+ (or use included `./mvnw`)
 
 ## Run locally
 
 Start the development server with:
 
 ```shell
-gradle bootRun
+./mvnw spring-boot:run
 ```
 
 Then open [http://localhost:8080](http://localhost:8080).

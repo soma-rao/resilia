@@ -35,6 +35,8 @@ gradle-app.setting
 target/
 *.class
 *.log
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
 
 # Vaadin Build and dependency directories
 node_modules/
